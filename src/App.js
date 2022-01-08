@@ -2,7 +2,7 @@ import Rooster from "./Components/Rooster";
 
 function App() {
   return (
-    <div className="bg-blue-50 h-screen relative ">
+    <div className="">
       <Rooster />
     </div>
   );

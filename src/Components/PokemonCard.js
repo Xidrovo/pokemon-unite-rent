@@ -19,7 +19,7 @@ const setRole = (role) => {
 
 const PokemonCard = ( { name, number, role } ) => {
     return (
-        <div className="p-6 flex flex-col w-40 h-40">
+        <div className="p-6 flex flex-col w-40 h-40" key={number}>
             <p className="text-center font-semibold">{name}</p>
             <img className="object-contain" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${number}.png` } alt={name}></img>
             <p className={`text-center text-white font-semibold rounded-full ${setRole(role)}`} >{role}</p>

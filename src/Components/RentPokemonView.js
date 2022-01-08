@@ -28,7 +28,8 @@ const RentPokemonView = () => {
     return (
         <section>
             <button className="p-2 px-6 bg-indigo-900 text-white font-semibold rounded-full" onClick={() => randomizePokemons()}> Rent Pokemons!</button>
-            {team1.length > 0 &&
+            <br></br>
+            { team1.length > 0 &&
                 <section className = "py-8 flex flex-col justify-evenly">
                     <article className="py-6">
                         <h3 className="font-semibold ">Team 1</h3>
@@ -39,7 +40,7 @@ const RentPokemonView = () => {
                         </div>
                     </article>
                     <article className="py-6">
-                        <h3 className="font-semibold ">Team 1</h3>
+                        <h3 className="font-semibold ">Team 2</h3>
                         <div className="py-4 flex flex-row flex-wrap">
                         {team2.map(team => {
                             return PokemonCard(pokemonRooster[team])

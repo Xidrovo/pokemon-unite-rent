@@ -2,3 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#pokemon {
+    background: url(./Components/background.jpg) repeat !important;
+}
